@@ -1,0 +1,131 @@
+<!-- ==================================================================== -->
+<!-- ARQUIVO 1: HTML (A Estrutura do Site) -->
+<!-- ==================================================================== -->
+<!-- Esta é a base do site. O HTML define o conteúdo e a estrutura. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- O <head> contém informações sobre a página que não são visíveis. -->
+    
+    <!-- Define o tipo de caractere para que acentos funcionem corretamente. -->
+    <meta charset="UTF-8">
+    
+    <!-- Configura a página para ser responsiva, adaptando-se a celulares e tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- O <title> é o nome que aparece na aba do navegador. -->
+    <title>Barbearia Irmandade</title>
+    
+    <!-- O <link> conecta o seu arquivo HTML com o arquivo CSS para o estilo. -->
+    <!-- 'href' aponta para o nome do arquivo CSS na mesma pasta. -->
+    <link rel="stylesheet" href="barbearia.css">
+</head>
+<body>
+
+    <!-- O <body> contém todo o conteúdo visível da sua página. -->
+
+    <!-- A tag <header> geralmente representa o topo da página, como o menu de navegação. -->
+    <header class="header">
+        <!-- O <h1> é o título principal da sua página. -->
+        <h1>Irmandade</h1>
+        
+        <!-- A tag <nav> é usada para a navegação do site (links). -->
+        <nav>
+            <ul>
+                <!-- Cada <li> é um item da lista do menu. -->
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <!-- A tag <a> é um link. O 'href' com '#' direciona para uma seção na mesma página. -->
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#profissionais">Profissionais</a></li>
+                <li><a href="#agendamento">Marque seu Horário</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- A tag <main> indica o conteúdo principal e único da página. -->
+    <main>
+        <!-- A tag <section> divide a página em seções temáticas. Cada uma tem um 'id' para ser o alvo dos links do menu. -->
+        <section id="inicio" class="secao inicio">
+            <h2>Barbearia Irmandade</h2>
+            <p>Mais do que um corte, um ponto de encontro. Venha fazer parte da nossa comunidade.</p>
+        </section>
+
+        <section id="sobre" class="secao">
+            <h2>Sobre Nós</h2>
+            <p>A Barbearia Irmandade não é apenas um lugar para um bom corte de cabelo e barba. Somos um refúgio de amizade e boas conversas, onde cada cliente é parte da nossa história.</p>
+        </section>
+
+        <section id="servicos" class="secao">
+            <h2>Nossos Serviços</h2>
+            <!-- A <div> é uma "caixa" invisível usada para agrupar e estilizar conteúdos. -->
+            <div class="lista-servicos">
+                <div><h4>Barba e Careca</h4></div>
+                <div><h4>Corte e Barba</h4></div>
+                <div><h4>Limpeza de Pele</h4></div>
+                <!-- ... Adicione mais serviços aqui usando a mesma estrutura <div> -->
+            </div>
+        </section>
+        
+        <section id="promocoes" class="secao">
+            <h2>Promoções Especiais</h2>
+            <p>Fique ligado! De terça a quinta, temos promoções exclusivas para você.</p>
+        </section>
+
+        <section id="produtos" class="secao">
+            <h2>Nossos Produtos</h2>
+            <p>Aqui você encontrará a linha completa de produtos que usamos e vendemos em nossa barbearia.</p>
+        </section>
+
+        <section id="profissionais" class="secao">
+            <h2>Nossos Profissionais</h2>
+            <div class="lista-profissionais">
+                <div>
+                    <!-- A tag <img> insere uma imagem. 'src' é o link da imagem. 'alt' é um texto para acessibilidade. -->
+                    <img src="https://placehold.co/150x150" alt="Foto do Barbeiro 1" class="foto-profissional">
+                    <h4>Nome do Barbeiro 1</h4>
+                    <p>(Descrição sobre o profissional)</p>
+                </div>
+                <!-- ... Adicione mais profissionais aqui com a mesma estrutura -->
+            </div>
+        </section>
+
+        <section id="agendamento" class="secao">
+            <h2>Marque seu Horário</h2>
+            <form id="formulario-agendamento">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                
+                <label for="profissional">Profissional:</label>
+                <select id="profissional">
+                    <option value="">-- Selecione --</option>
+                    <option value="barbeiro1">Nome do Barbeiro 1</option>
+                    <option value="barbeiro2">Nome do Barbeiro 2</option>
+                </select>
+                
+                <label for="data">Data e Horário:</label>
+                <input type="datetime-local" id="data">
+                
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Entre em Contato</h2>
+            <p>Telefone: (00) 1234-5678</p>
+            <p>Email: contato@barbeariairmandade.com.br</p>
+        </section>
+    </main>
+
+    <!-- A tag <footer> representa o rodapé da página. -->
+    <footer class="footer">
+        <p>&copy; 2024 Barbearia Irmandade. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- O <script> conecta o seu arquivo HTML com o arquivo JavaScript para o comportamento. -->
+    <script src="barbearia.js"></script>
+</body>
+</html>

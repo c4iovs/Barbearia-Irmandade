@@ -1,3 +1,3 @@
 # Barbearia-Irmandade
-Esse é o site que eu e meu colega desenvolvemos para a barbearia em que frequentamos. Meu colega foi responsável por toda a parte do css. Nesse projeto foi um dos meu maiores desafios como desenvolvedor,  já quero o próximo.
+Esse é o site que eu e meu colega desenvolvemos para a barbearia em que frequentamos. Nesse projeto foi um dos meu maiores desafios como desenvolvedor,  já quero o próximo.
 pedi pro chat colocar explixaçoes de cada ação do projeto, pra quem vizualizar poder entender o que acontece em cada parte do projeto
